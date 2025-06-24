@@ -12,6 +12,8 @@
     <java.version>11</java.version>
     <sonar.organization>swetha-mp-03</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    <sonar.projectKey>Swetha-mp-03_spring_sonar</sonar.projectKey>
+    <sonar.login>ea444bd262b255265c5b6cf00f57ecc25e90d638</sonar.login>
   </properties>
 
   <dependencies>
@@ -78,5 +80,12 @@
 
   <build>
     <finalName>SpringMVCExample</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.9.1.2184</version>
+      </plugin>
+    </plugins>
   </build>
 </project>
