@@ -5,10 +5,6 @@ import javax.validation.constraints.*;
 
 public class User {
 
-//    @NotBlank(message = "Name is required.")
-//    @Pattern(regexp = "^[A-Za-z\\s]+$", message = "Name must contain only letters and spaces.")
-//    private String name;
-
     @NotBlank(message = "Name is required.")
     @ValidName
     private String name;

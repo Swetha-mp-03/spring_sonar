@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-<html>
+<html lang="en" xml:lang="en">
 <head>
     <title>Enhanced Form</title>
     <style>
@@ -95,15 +96,21 @@
         <form:input path="email" id="email"/>
         <form:errors path="email" cssClass="error"/>
 
-        <label>
-            <form:checkbox path="agreeToTerms"/> Agree to Terms and Conditions
+        <label for="agreeToTerms">
+            <form:checkbox path="agreeToTerms" id="agreeToTerms"/> Agree to Terms and Conditions
         </label>
+
         <form:errors path="agreeToTerms" cssClass="error"/>
 
-        <label>Gender:</label>
-        <form:radiobutton path="gender" value="Male"/> Male
-        <form:radiobutton path="gender" value="Female"/> Female
+        <label for="genderMale">Gender:</label>
+        <label for="genderMale">
+            <form:radiobutton path="gender" value="Male" id="genderMale"/> Male
+        </label>
+        <label for="genderFemale">
+            <form:radiobutton path="gender" value="Female" id="genderFemale"/> Female
+        </label>
         <form:errors path="gender" cssClass="error"/>
+
 
         <label for="country">Country:</label>
         <form:select path="country" id="country">
